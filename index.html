@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ramadan Journal - Home</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- You can add additional meta tags or fonts here -->
+</head>
+<body>
+
+  <!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="spinner"></div>
+</div>
+
+  <!-- Navbar Container -->
+  <div id="navbar-container"></div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Ramadan Journal</h1>
+        <p>
+          Assalamu Alaikum wa Rahmatullahi wa Barakatuh! <br>
+          Welcome to your very own Ramadan Journal! <br><br>
+          This platform is designed to help you stay organized and consistent in your daily spiritual and personal goals throughout Ramadan and beyond. <br>
+         It provides an easy-to-use interface to monitor your progress and keep you motivated on your journey of self-improvement.
+          <br>
+          Track your daily habits during Ramadan – from prayers and Quran reading to workouts and more.
+          Our journal helps you set goals, record your progress, and reflect on your spiritual journey.
+          <br><br>
+          May Allah bless your efforts and make this a source of barakah in your life. 🌙✨
+        </p>
+        <a href="/html/tracker.html" class="btn">Start Tracking Today</a>
+      </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Daily habit tracker</li>
+        <li>Progress history in table format</li>
+        <li>Goal setting and reflections</li>
+        <li>Easy-to-use interface and responsive design</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ramadan Journal. All rights reserved. Made by Uzair Mir</p>
+  </footer>
+
+  <!-- Include the dynamic navbar script -->
+  <script type="module" src="/js/navbar.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => {
+        document.getElementById("loading-screen").classList.add("hidden");
+      }, 1000); // Wait 1 second before hiding the loader
+    });
+  </script>
+  
+</body>
+</html>
