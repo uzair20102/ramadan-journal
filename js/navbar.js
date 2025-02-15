@@ -30,6 +30,7 @@ function buildNavbar(user) {
           <li class="navbar-item"><a href="/index.html">Home</a></li>
           <li class="navbar-item"><a href="/html/tracker.html">Tracker</a></li>
           <li class="navbar-item"><a href="/html/progress.html">Progress</a></li>
+          <li class="navbar-item"><a href="/html/faq.html">FAQs</a></li>
           <li class="navbar-item"><a href="/html/contact.html">Contact</a></li>
         </ul>
       </div>
@@ -43,7 +44,7 @@ function buildNavbar(user) {
   } else {
     // If no user is logged in, show a Login link
     navbarHTML += `
-          <b><a href="/html/login.html" class="navbar-btn btn2">Login</a></b>`;
+          <b><a href="/html/login.html" class="navbar-btn btn2">Login / Register</a></b>`;
   }
 
   navbarHTML += `
