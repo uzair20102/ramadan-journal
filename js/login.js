@@ -10,6 +10,25 @@ const signupBtn = document.getElementById('signup-btn');
 const fail = document.getElementById('fail')
 const success = document.getElementById('success')
 
+//PP and TOU checker
+document.getElementById("signup-btn").addEventListener("click", function() {
+  const termsContainer = document.getElementById("terms-container");
+  const termsCheckbox = document.getElementById("terms-checkbox");
+
+  // Show the terms checkbox only when signing up
+  termsContainer.style.display = "block";
+
+  if (!termsCheckbox.checked) {
+      alert("You must agree to the Terms of Use and Privacy Policy before signing up.");
+      return; // Stop further execution
+  }
+
+  // Proceed with sign-up process here
+  console.log("Proceeding with sign-up...");
+});
+
+
+
 // Handle Login
 authForm.addEventListener('submit', async (e) => {
     e.preventDefault(); // Prevent page refresh
