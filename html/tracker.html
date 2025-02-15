@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Journal - Tracker</title>
+
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-auth.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="/css/tracker.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="tracker.js" defer></script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="spinner"></div>
+  </div>
+  
+    <div id="navbar-container"></div>
+      
+
+    <div class="container">
+        <div class="text">
+        <h1>Track Your Daily Progress</h1>
+        <h2>Log Today's Progress</h2>
+        </div>
+        
+        <!-- Daily Progress Form -->
+        <form id="progress-form">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required />
+        <br>
+            <label>
+                <input type="checkbox" id="prayersf" />
+                Fajr
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="prayersd" />
+                Duhur
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="prayersa" />
+                Asr
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="prayersm" />
+                Maghrib
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="prayersi" />
+                Isha
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="prayerst" />
+                Taraweeh
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="athkar" />
+                Athkar
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="workout" />
+                Worked out? 
+            </label><br>
+
+            <label>
+                Qur'an Pages: <input type="number" id="pages">
+            </label><br>
+        
+            <textarea id="goals" placeholder="Set goals for the future...."></textarea><br>
+        
+            <button type="submit" class="btn1">Save Progress</button>
+            <!-- <button id="progress-history" class="btn121`12">Progress History</button><br> -->
+        </form>
+        <p id="saved"></p>
+        <p id="error"></p>
+        <br>
+        
+        <br>
+        <br>
+       
+
+        <br>
+        <br>
+        
+    </div>
+
+    <footer>
+                        <p>&copy; 2025 Ramadan Journal. All rights reserved. Made by Uzair Mir</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms-of-use.html">Terms of Use</a>
+        </p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms-of-use.html">Terms of Use</a>
+        </p>
+      </footer>
+      
+    <script src="/js/tracker.js" type="module"></script>
+    <script type="module" src="/js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(() => {
+            document.getElementById("loading-screen").classList.add("hidden");
+          }, 1000); // Wait 1 second before hiding the loader
+        });
+      </script>
+      
+
+</body>
+</html>

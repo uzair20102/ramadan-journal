@@ -1,0 +1,85 @@
+/* FAQ Page Container */
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Main Heading */
+  .faq-container h1 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Section Headings */
+  .faq-container h2 {
+    font-size: 1.8em;
+    color: #2300bd;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2300bd;
+    padding-bottom: 5px;
+  }
+  
+  /* Sub-Headings/Paragraphs for each topic */
+  .faq-container h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Style links within your content */
+  .faq-container h3 a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .faq-container h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .faq-contents {
+    background-color: #eaf7ea;
+    border: 1px solid #2300bd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .faq-contents h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #2300bd;
+    text-align: center;
+  }
+  
+  .faq-contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .faq-contents li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .faq-contents a {
+    text-decoration: none;
+    color: #7361c2;
+    transition: color 0.3s ease;
+  }
+  
+  .faq-contents a:hover {
+    color: #7eb681;
+  }
+  

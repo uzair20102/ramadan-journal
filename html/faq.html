@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ramadan Journal - FAQs</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/faq.css">
+  <!-- You can add additional meta tags or fonts here -->
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+  </div>
+  
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+    
+<div class="faq-container">
+    <h1>How to use the journal</h1>
+
+
+    <div class="faq-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#registering">Registering and Logging in</a></li>
+        <li><a href="#password">Forgot your password?</a></li>
+        <li><a href="#tracking-progress">Tracking Today's Progress</a></li>
+        <li><a href="#reflecting-progress">Reflecting on Previous Progress</a></li>
+        <li><a href="#logging-out">Logging Out</a></li>
+        <li><a href="#other-queries">Other Queries</a></li>
+        <li><a href="#TOU">Privacy Policy and Terms of Use</a></li>
+      </ul>
+    </div>
+    
+
+    <h2 id="note">Note</h2>
+    <h3>Please note, this site is newly uploaded this year so there is a possibility that you may come accross a bug or problem, if this is the case, please report it <a href="contact.html">here.</a></h3>
+    
+    <h2 id="registering">Registering and Logging in</h2>
+    <h3>To register for an account, click the "login / register" button in the top-left corner, type in your email address and create a password (must include at least 1 number and 1 symbol) then click "register", once your account is registered press the "login" button and proceed with you action</h3>
+    
+    <h2 id="password">Forgot your password?</h2>
+
+    <h2 id="tracking-progress">Tracking todays progress</h2>
+    <h3>Once logged in, click the "tracker" button on the navigation bar and fill in todays date and other fields. Once done, click "save progress" and wait for it to be confirmed</h3>
+    
+    <h2 id="reflecting-progress">Reflecting on previous progress</h2>
+    <h3>To look over and reflect on the progress, click "progress" in the navigation bar, from here, you can see a table with each date and fieldset listed</h3>
+   
+    <h2 id="logging-out">Logging out</h2>
+    <h3>To logout, simply click the "logout" button on the top-right</h3>
+    
+    <h2 id="other-queries">Other Queries</h2>
+    <h3>For all other questions and queries, please contact us by clicking <a href="/html/contact.html">here.</a></h3>
+
+    <h2 id="TOU">Privacy Policy and Terms of Use</h2>
+    <h3>By using this website, you agree to your <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-use.html">Terms of Use.</a></h3>
+
+  </div>
+
+
+      <!-- Footer -->
+  <footer>
+            <p>&copy; 2025 Ramadan Journal. All rights reserved. Made by Uzair Mir</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms-of-use.html">Terms of Use</a>
+        </p>
+  </footer>
+
+  <!-- Include the dynamic navbar script -->
+  <script type="module" src="/js/navbar.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => {
+        document.getElementById("loading-screen").classList.add("hidden");
+      }, 1000); // Wait 1 second before hiding the loader
+    });
+  </script>
+  
+</body>
+</html>

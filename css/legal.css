@@ -1,0 +1,37 @@
+.legal-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.legal-container h1, 
+.legal-container h2 {
+    color: #333;
+    text-align: center;
+}
+
+.legal-container h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.legal-container p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+}
+
+.legal-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.legal-container a:hover {
+    text-decoration: underline;
+}
