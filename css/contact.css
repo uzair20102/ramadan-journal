@@ -57,3 +57,39 @@ form button {
 form button:hover {
   background-color: #3ba199;
 }
+
+@media (max-width: 768px) {
+  main {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  form textarea {
+    min-height: 80px;
+  }
+  
+  form button {
+    padding: 10px;
+    font-size: 0.9em;
+    margin-top: 15px;
+  }
+}
