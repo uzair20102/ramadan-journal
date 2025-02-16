@@ -82,4 +82,46 @@
   .faq-contents a:hover {
     color: #7eb681;
   }
+
+@media (max-width: 768px) {
+  .faq-container {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
   
+  .faq-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .faq-container h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+  }
+  
+  .faq-container h3 {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .faq-contents {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .faq-contents h2 {
+    font-size: 1.5em;
+  }
+  
+  .faq-contents ul {
+    margin: 10px 0;
+  }
+  
+  .faq-contents li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
