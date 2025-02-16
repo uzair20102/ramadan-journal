@@ -343,3 +343,33 @@ form label a:hover {
     padding: 1em;
   }
 }
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Aligns to the left */
+  gap: 10px; /* Reduces space between items */
+  padding: 0;
+  list-style: none;
+}
+
+.contact-info li {
+  padding: 5px 10px; /* Reduces padding */
+  border-radius: 5px;
+  font-size: 0.9em; /* Makes text slightly smaller */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap; /* Prevents items from breaking onto new lines */
+}
+
+/* Ensures proper wrapping on smaller screens */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-wrap: wrap;
+  }
+
+  .contact-info li {
+    font-size: 0.85em; /* Further reduces font size for smaller screens */
+    padding: 4px 8px;
+  }
