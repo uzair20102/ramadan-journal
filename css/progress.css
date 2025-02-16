@@ -26,3 +26,12 @@ table {
   tr:hover {
     background-color: #e0f2e9;
   }
+
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9em;
+  }
+  th, td {
+    padding: 8px;
+  }
+}
