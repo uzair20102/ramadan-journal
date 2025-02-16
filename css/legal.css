@@ -35,3 +35,18 @@
 .legal-container a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .legal-container {
+      padding: 15px;
+      margin: 20px 10px;
+    }
+    .legal-container h1, 
+    .legal-container h2 {
+      font-size: 1.8em;
+    }
+    .legal-container p {
+      font-size: 0.95em;
+    }
+  }
+  
