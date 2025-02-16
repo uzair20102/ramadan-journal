@@ -19,11 +19,12 @@ document.getElementById("signup-btn").addEventListener("click", function() {
   termsContainer.style.display = "block";
 
   if (!termsCheckbox.checked) {
-      alert("You must agree to the Terms of Use and Privacy Policy before signing up.");
+      fail.innerHTML = "You must agree to the Terms of Use and Privacy Policy before signing up."
       return; // Stop further execution
   }
 
   // Proceed with sign-up process here
+    fail.innerHTML = '';
   console.log("Proceeding with sign-up...");
 });
 
