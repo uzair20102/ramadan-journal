@@ -373,6 +373,7 @@ form label a:hover {
     font-size: 0.85em; /* Further reduces font size for smaller screens */
     padding: 4px 8px;
   }
+}
 
 /* Login Form Styling */
 .login {
