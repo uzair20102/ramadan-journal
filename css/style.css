@@ -373,3 +373,43 @@ form label a:hover {
     font-size: 0.85em; /* Further reduces font size for smaller screens */
     padding: 4px 8px;
   }
+
+/* Login Form Styling */
+.login {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+.login label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.login input[type="email"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  width: 95%; /* adjust width as needed */
+}
+
+/* Input Hover & Focus Effect */
+.login input:focus {
+  border-color: #0011ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
