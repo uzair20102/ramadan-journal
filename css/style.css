@@ -318,3 +318,28 @@ form label a {
 form label a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-left, .navbar-center, .navbar-right {
+    flex: none;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+  .hero {
+    padding: 80px 10px;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  main {
+    padding: 1em;
+  }
+}
