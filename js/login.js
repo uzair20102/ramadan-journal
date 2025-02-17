@@ -82,7 +82,7 @@ function getFriendlyErrorMessage(error) {
       case 'auth/invalid-login-credentials':
         return 'Invalid email/password'
       case 'auth/password-does-not-meet-requirements':
-        return 'Please ensure password contains at least 1 number and at least 1 symbol'
+        return 'Password must be at least 6 characters and contain at least 1 number and 1 symbol'
       default:
         return 'An error occurred. Please try again later.';
     }
