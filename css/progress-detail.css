@@ -1,0 +1,108 @@
+/* Container for Detail & Comparison */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  /* Ensure the header and compare controls span both columns and are centered */
+  .container .header,
+  .container .compare-controls {
+    grid-column: span 2;
+    text-align: center;
+  }
+  
+  /* Card Styles for Detail & Comparison */
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Hide the comparison card if no data */
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive: On screens up to 768px, stack items vertically */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  /* Day Detail Section */
+  .detail {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Comparison Section Elements */
+  #compare-date {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  #compare-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #2658fd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #compare-btn:hover {
+    background-color: #3ba199;
+  }
+  
+  /* Comparison Result Styling */
+  #comparison-result {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Layout adjustments for larger screens */
+  @media (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .detail, #comparison-result {
+      margin-bottom: 0;
+    }
+    /* Make headings span both columns */
+    .container h1, .container h2 {
+      grid-column: span 2;
+    }
+    /* Place the compare input and button across the grid */
+    #compare-date, #compare-btn {
+      grid-column: span 2;
+      margin: 10px auto;
+    }
+  }
+  
