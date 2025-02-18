@@ -25,6 +25,7 @@ table {
   
   tr:hover {
     background-color: #e0f2e9;
+    cursor: pointer;
   }
 
 @media (max-width: 768px) {
