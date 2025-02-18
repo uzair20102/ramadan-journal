@@ -298,6 +298,7 @@ footer a:hover {
 
 input {
   outline: none;
+  text-align: center;
 }
 
 .btn2:hover {
