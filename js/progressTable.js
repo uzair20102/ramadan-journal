@@ -94,6 +94,12 @@ async function renderProgressTable() {
       <td>${record.quranpages}</td>
       <td>${record.goals}</td>
     `;
+
+                // Click event to redirect to the detail page
+          row.addEventListener('click', function() {
+            window.location.href = `progress-detail.html?date=${record.date}`;
+          });
+      
     tableBody.appendChild(row);
   });
 }
