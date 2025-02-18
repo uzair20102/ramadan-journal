@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Progress Detail</title>
+  <link rel="icon" href="other/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="other/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="other/favicon.png">
+  
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/progress-detail.css">
+</head>
+<body>
+
+      <!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="spinner"></div>
+  </div>
+    <div id="navbar-container"></div>
+
+
+    <div class="container">
+        <div class="header">
+          <h1>Progress Detail for <span id="selected-date"></span></h1>
+        </div>
+        <div class="compare-controls">
+          <input type="date" id="compare-date">
+          <button id="compare-btn">Compare</button>
+        </div>
+        <div class="card" id="day-detail">
+          <!-- Main day detail goes here -->
+        </div>
+        <div class="card hidden" id="comparison-result">
+          <!-- Comparison data; if empty, the class "hidden" keeps it invisible -->
+        </div>
+      </div>
+      
+
+
+  <script type="module" src="/js/detail.js"></script>
+  <script type="module" src="/js/navbar.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => {
+        document.getElementById("loading-screen").classList.add("hidden");
+      }, 1000); // Wait 1 second before hiding the loader
+    });
+  </script>
+</body>
+</html>
