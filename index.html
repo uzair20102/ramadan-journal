@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Ramadan Journal - Home</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="manifest" href="/PWA/manifest.json">
   <!-- You can add additional meta tags or fonts here -->
 </head>
 <body>
@@ -66,6 +67,11 @@
         document.getElementById("loading-screen").classList.add("hidden");
       }, 1000); // Wait 1 second before hiding the loader
     });
+
+        if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/PWA/service-worker.js")
+    .then(() => console.log("Service Worker Registered"));
+}
   </script>
   
 </body>
