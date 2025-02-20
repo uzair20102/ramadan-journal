@@ -1,0 +1,22 @@
+{
+    "name": "Ramadan Journal",
+    "short_name": "Ramadan Journal",
+    "description": "Track your daily habits during Ramadan!",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#008080",
+    "icons": [
+      {
+        "src": "/other/app.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/other/app.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
